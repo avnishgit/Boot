@@ -1,0 +1,15 @@
+2019-05-25 21:45:08,206 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2019-05-25 21:45:11,350 [Worker-2: Loading available Gradle versions] ERROR o.e.b.c.i.u.g.PublishedGradleVersions - Cannot write Gradle version information cache file.
+java.io.FileNotFoundException: C:\Users\AVNISH SINGH\.tooling\gradle\versions.json (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method) ~[na:1.8.0_191]
+	at java.io.FileOutputStream.open(FileOutputStream.java:270) ~[na:1.8.0_191]
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213) ~[na:1.8.0_191]
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:201) ~[com.google.guava_21.0.0.v20170206-1425.jar:na]
+	at com.google.common.io.Files$FileByteSink.openStream(Files.java:189) ~[com.google.guava_21.0.0.v20170206-1425.jar:na]
+	at com.google.common.io.ByteSink$AsCharSink.openStream(ByteSink.java:151) ~[com.google.guava_21.0.0.v20170206-1425.jar:na]
+	at com.google.common.io.CharSource.copyTo(CharSource.java:215) ~[com.google.guava_21.0.0.v20170206-1425.jar:na]
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.storeCacheVersionsFile(PublishedGradleVersions.java:183) [org.eclipse.buildship.core_3.0.0.v20181106-1441-m.jar:na]
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:149) [org.eclipse.buildship.core_3.0.0.v20181106-1441-m.jar:na]
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:108) [org.eclipse.buildship.core_3.0.0.v20181106-1441-m.jar:na]
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:62) [org.eclipse.buildship.core_3.0.0.v20181106-1441-m.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.200.v20180912-1356.jar:na]
